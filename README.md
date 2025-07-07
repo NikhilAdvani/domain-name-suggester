@@ -16,9 +16,9 @@ A repository showcasing a complete pipeline to build, fine‑tune, evaluate, and
 
 <pre>
 ├── data/
-│   ├── synthetic_data.csv         # Initial 1 000–row synthetic dataset
-│   ├── augmented_data.csv         # Paraphrased + synonym-augmented subset (1 000 rows)
-│   └── augmented_data_full.csv    # Full augmented dataset (1 500 rows)
+│   ├── synthetic_data.csv         # Initial 500–row synthetic dataset
+│   ├── augmented_data.csv         # Paraphrased + synonym-augmented subset (1000 rows)
+│   └── augmented_data_full.csv    # Full augmented dataset (1500 rows)
 ├── checkpoints/
 │   ├── baseline/                  # Baseline LoRA adapter + config
 │   └── final_model/               # Best‑performing LoRA adapter + config
