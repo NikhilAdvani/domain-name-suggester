@@ -4,19 +4,13 @@ A repository showcasing a complete pipeline to build, fine‑tune, evaluate, and
 
 ## Features
 
-<b>Synthetic Dataset Creation</b>: Generate and document 1 000+ diverse business descriptions.
-
-LoRA Fine‑Tuning: Efficiently fine‑tune Llama‑3 models with adapter tuning.
-
-Hyperparameter Optimization: Grid‑search tuned LoRA ranks, alphas, dropouts, and learning rates.
-
-LLM‑as‑Judge: Automated quality scoring (relevance, brevity, memorability, brandability).
-
-Edge‑Case Analysis: Systematic failure taxonomy across 210+ challenging prompts.
-
-Safety Guardrails: Regex‑based content filter blocking inappropriate requests.
-
-FastAPI Deployment: Ready‑to‑use endpoint for real‑time domain suggestions.
+**Synthetic Dataset Creation**: Generate and document 1 000+ diverse business descriptions.  
+**LoRA Fine-Tuning**: Efficiently fine-tune Llama-3 models with adapter tuning.  
+**Hyperparameter Optimization**: Grid-search LoRA ranks, alphas, dropouts, and learning rates.  
+**LLM-as-Judge**: Automated quality scoring (relevance, brevity, memorability, brandability).  
+**Edge-Case Analysis**: Systematic failure taxonomy across 210+ challenging prompts.  
+**Safety Guardrails**: Regex-based content filter blocking inappropriate requests.  
+**FastAPI Deployment**: Ready-to-use endpoint for real-time domain suggestions.
 
 ## Repository Structure
 
