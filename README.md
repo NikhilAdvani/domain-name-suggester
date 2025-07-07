@@ -20,7 +20,7 @@ FastAPI Deployment: Ready‑to‑use endpoint for real‑time domain suggestions
 
 ## Repository Structure
 
-<pre>'''
+<pre>
 ├── data/
 │   ├── synthetic_data.csv         # Initial 1 000–row synthetic dataset
 │   ├── augmented_data.csv         # Paraphrased + synonym-augmented subset (1 000 rows)
@@ -32,32 +32,40 @@ FastAPI Deployment: Ready‑to‑use endpoint for real‑time domain suggestions
 │   └── domain_suggester.ipynb     # Jupyter notebook with experiments & analysis
 ├── requirements.txt               # Python package dependencies
 └── README.md                      # This file
-'''</pre>
+</pre>
 
 ## Quick Start
 
 1. Clone and Enter Directory
 
-<pre> '''git clone https://github.com/yourusername/domain-suggester.git
-cd domain-suggester''' </pre>
+<pre> 
+git clone https://github.com/yourusername/domain-suggester.git
+cd domain-suggester 
+</pre>
 
 2. Create & Activate Virtual Environment
 
-<pre> '''python3 -m venv .venv
+<pre> 
+python3 -m venv .venv
 source .venv/bin/activate     # macOS/Linux
-.\.venv\Scripts\activate  # Windows PowerShell''' </pre>
+.\.venv\Scripts\activate  # Windows PowerShell 
+</pre>
 
 3. Install Dependencies
 
-<pre> '''pip install --upgrade pip
-pip install -r requirements.txt''' </pre>
+<pre>
+pip install --upgrade pip
+pip install -r requirements.txt
+</pre>
 
 4. Configure Credentials
 
 Create a .env file in the project root:
 
-<pre> '''HUGGINGFACE_HUB_TOKEN=hf_xxxYOUR_TOKEN_HERExxx
-OPENAI_API_KEY=sk-xxxYOUR_OPENAI_KEYxxx''' </pre>
+<pre>
+HUGGINGFACE_HUB_TOKEN=hf_xxxYOUR_TOKEN_HERExxx
+OPENAI_API_KEY=sk-xxxYOUR_OPENAI_KEYxxx
+</pre>
 
 5. Run Experiments
 
@@ -65,7 +73,7 @@ Open the notebook and execute all cells
 
 6. Load & Test Model
 
-<pre> '''
+<pre> 
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel, PeftConfig
 import torch
@@ -82,7 +90,7 @@ prompt = "Suggest domain for: cozy bakery in the suburbs\nDomain:"
 inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
 out = model.generate(**inputs, max_new_tokens=32)
 print(tokenizer.decode(out[0], skip_special_tokens=True))
-'''</pre>
+</pre>
 
 ## Results Summary
 
