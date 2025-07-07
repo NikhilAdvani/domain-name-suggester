@@ -20,6 +20,7 @@ FastAPI Deployment: Ready‑to‑use endpoint for real‑time domain suggestions
 
 ## Repository Structure
 
+<pre>'''
 ├── data/
 │   ├── synthetic_data.csv         # Initial 1 000–row synthetic dataset
 │   ├── augmented_data.csv         # Paraphrased + synonym-augmented subset (1 000 rows)
@@ -31,6 +32,7 @@ FastAPI Deployment: Ready‑to‑use endpoint for real‑time domain suggestions
 │   └── domain_suggester.ipynb     # Jupyter notebook with experiments & analysis
 ├── requirements.txt               # Python package dependencies
 └── README.md                      # This file
+'''</pre>
 
 ## Quick Start
 
