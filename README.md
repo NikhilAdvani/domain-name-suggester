@@ -2,9 +2,9 @@
 
 A repository showcasing a complete pipeline to build, fine‑tune, evaluate, and deploy an LLM for generating business domain name suggestions.
 
-🌟 Features
+## Features
 
-Synthetic Dataset Creation: Generate and document 1 000+ diverse business descriptions.
+<b>Synthetic Dataset Creation</b>: Generate and document 1 000+ diverse business descriptions.
 
 LoRA Fine‑Tuning: Efficiently fine‑tune Llama‑3 models with adapter tuning.
 
